@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Al</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/fontawesome-all.css">
+</head>
+<body>
+    <!--! header section start -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="Hospital Logo">
+        </a>
+        <nav class="navbar">
+            <a href="../index.html" class="active"><div><i class="fa-solid fa-home"></i></div>Home</a>
+            <a href="about.html"><div><i class="fa-solid fa-hospital"></i></div>About</a>
+            <a href="our-doctors.html"><div><i class="fa-solid fa-user-doctor"></i></div>Our Doctors</a>
+            <a href="our-services.html"><div><i class="fa-solid fa-hands-helping"></i></div>Our Services</a>
+            <a href="doctor-work-schedule.html"><div><i class="fa-solid fa-calendar-alt"></i></div>Doctor Schedule</a>
+            <a href="book.html"><div><i class="fa-solid fa-calendar-plus"></i></div>Book Now</a>
+            <a href="contact-us.html"><div><i class="fa-solid fa-phone-alt"></i></div>Contact Us</a>        
+        </nav>
+        <div class="buttons">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <!--! header section end -->
+
+    <div class="book">
+        <h2>Book Now</h2>
+        <form action="/randevu" method="post">
+            <div class="form-group">
+                <label for="name">Name Surname:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+</body>
+</html>
